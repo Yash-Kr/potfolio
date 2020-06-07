@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* =================== body ================================ */
+
+body{
+margin: 0;
+padding: 0;
+ overflow-x: hidden;
+}
+
+/* =============================Top======================================= */
+ .top{
+display: none;
+width:100%;
+z-index:1;
+left: 0;
+top: 0;
+right: 0;
+background-color: #888888;
+overflow:hidden;
+border-bottom: 2px solid black;
+
+}
+
+/* =======================sidebar=============================== */
+.side-bar{
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #888888;
+  overflow-x: hidden;
+border-right: 2px solid black;
+}
+
+.name{
+display: block;
+text-align: center;
+margin-top:80px;
+line-height: 0.75;
+}
+
+.name1{
+font-family: "Ubuntu" ,sans-serif;
+color: #fff;
+font-weight: 900;
+ text-shadow: 2px 2px 4px #000000;
+}
+.link{
+text-align: center;
+display: block;
+margin-top: 60px;
+
+}
+
+.link1, .link2, .link3, .link4{
+display: block;
+padding: 0;
+background-color: #000000;
+
+}
+
+.link1:hover, .link2:hover, .link3:hover,  .link4:hover{
+background-color: #323232;
+}
+
+a:hover{
+text-decoration: none;
+color: #f0f0f0;
+}
+a{
+display: block;
+text-decoration: none;
+color: #f0f0f0;
+padding:20px;
+font-family: 'Merriweather', serif;
+font-weight: 600;
+border-bottom: 1px solid  #40514E;
+}
+
+/* ====================== header ================================  */
+
+.header{
+
+
+color: black;
+background-size: cover;
+margin-left: 200px;
+
+height:600px;
+background-repeat: no-repeat;
+background-image: url("images/S2.jpg");
+filter: grayscale(75%);
+background-position: center;
+background-attachment:scroll;
+opacity: 50%;
+animation-name: header;
+animation-duration: 15s;
+animation-delay: 2s;
+animation-timing-function: linear;
+perspective: 1000;
+animation-iteration-count:3
+
+}
+
+
+/* ====animation=== */
+ @keyframes header {
+/* 0% {background-image: url("images/S1.jpg"); filter: grayscale(75%);} */
+33% {background-image: url("images/S1.jpg"); filter: grayscale(75%);}
+66% {background-image: url("images/S3.jpg"); filter: grayscale(75%);}
+100% {background-image: url("images/S4.jpg"); filter: grayscale(75%);}
+
+}
+
+
+/* ===================================About me====================================== */
+#about-me{
+margin-top: 60px;
+margin-left: 200px;
+text-align: justify;
+padding: 40px 220px;
+line-height: 1.5;
+background-color: #f0f0f0;
+}
+h1{
+font-family: 'Raleway', sans-serif;
+margin-top: 50px;
+}
+
+.about-me1 , p{
+font-family: 'Merriweather', serif;
+color: #40514E;
+}
+
+
+/* =================================Image Gallery====================================== */
+
+#image-gallery{
+margin-top: 60px;
+margin-left: 420px;
+}
+
+
+
+
+
+
+/* ============w3 schools======== */
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+
+}
+
+
+
+
+
+
+
+/* =============================================AWARDS SECTION===================================================== */
+ #awards{
+ margin-top: 60px;
+ margin-left: 200px;
+ text-align: justify;
+ padding: 40px 220px;
+ line-height: 1.5;
+ background-color: #f0f0f0;
+ height:500px;
+ }
+
+.trophy, .medal{
+display: inline-block;
+width:50%;
+float:left;
+text-align: center;
+}
+
+.fas{
+display: block;
+}
+h3{
+font-family: 'Raleway', sans-serif;
+}
+
+/* =======================================SOCIAL MEDIA==================================================== */
+
+#social-media{
+background-color: #fff;
+padding-bottom: 20px;
+padding-top: 20px;
+margin-left: 200px;
+text-align: center;
+}
+
+.social{
+color: black;
+display: inline-block;
+border: 0;
+}
+
+.social:hover{
+background-color: #323232;
+
+}
+
+
+
+/* ================================================MEDIA QUERIES========================================================== */
+@media only screen and (min-width:600px) and (max-width: 992px) {
+/* ==================for tablets============== */
+
+.name1{
+font-family: 'Piedra', cursive;
+letter-spacing: 2px;
+font-size: 40px;
+line-height: 0.75;
+}
+
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+.side-bar{
+display: none;
+margin-left: 0;
+}
+
+.top{
+display:block;
+}
+
+.header , #image-gallery , #social-media , #about-me , #awards{
+margin-left: 0;
+}
+
+#about-me{
+padding:20px 40px;
+}
+
+#awards{
+padding:60px 5px;
+height:500px;
+margin-left: 0;
+margin-right: 0;
+}
+.trophy, .medal{
+/* display: inline-block; */
+text-align: center;
+padding-left: 15px;
+display: block;
+}
+
+ h1
+{
+text-align: center;
+}
+
+.about-me1{
+padding-left: 50px;
+padding-right: 50px;
+}
+
+
+
+}
+
+/* ============================================================================================================= */
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+
+.name1{
+font-family: 'Piedra', cursive;
+letter-spacing: 2px;
+font-size: 40px;
+line-height: 0.75;
+}
+
+
+.side-bar{
+display: none;
+margin-left: 0;
+}
+
+.top{
+display:block;
+}
+
+.header , #image-gallery , #social-media , #about-me , #awards{
+margin-left: 0;
+}
+
+#about-me{
+padding:20px 40px;
+}
+
+.column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+#awards{
+margin-top: 30px;
+text-align: justify;
+padding: 20px;
+line-height: 1.5;
+background-color: #f0f0f0;
+height:500px;
+}
+
+.trophy, .medal{
+/* display: inline-block; */
+width: 50%;
+text-align: left;
+padding-left: 15px;
+display: block;
+float: left;
+overflow: hidden;
+}
+.trophy{
+padding-right: 20px;
+}
+ .fa-trophy, .fa-medal ,h3,h1
+{
+text-align: center;
+}
+
+.medal{
+padding-left: 30px;
+padding-right: 0;
+}
+
+
+}
